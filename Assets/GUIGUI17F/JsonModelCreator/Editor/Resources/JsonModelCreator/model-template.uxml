@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <GUIGUI17F.JsonModelCreator.JsonModelElement style="border-bottom-width: 2px; padding-top: 15px; padding-bottom: 15px; border-bottom-color: rgb(0, 0, 0);">
+        <ui:VisualElement style="justify-content: space-between; flex-direction: row;">
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:Toggle name="expand-toggle" value="true" class="unity-foldout__toggle" />
+                <GUIGUI17F.JsonModelCreator.CompatibleDropdownField name="type-field" choices="struct,class" style="width: 80px;" />
+                <ui:TextField name="name-field" style="min-width: 120px;" />
+            </ui:VisualElement>
+            <ui:Button text="DeleteModel" name="delete-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="field-list" style="margin-left: 60px;" />
+        <ui:Button text="Add Field" name="add-field-button" style="margin-left: 64px; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; padding-right: 2px;" />
+    </GUIGUI17F.JsonModelCreator.JsonModelElement>
+</ui:UXML>

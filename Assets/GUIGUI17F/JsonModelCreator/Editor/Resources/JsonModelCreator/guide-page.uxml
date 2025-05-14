@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement style="margin-left: 20px; margin-right: 20px; margin-top: 15px; flex-direction: row; justify-content: space-between; margin-bottom: 10px; min-height: 18px;">
+        <ui:Label text="Input Json Text" />
+        <ui:VisualElement style="flex-direction: row;">
+            <ui:Toggle value="true" text=" Use Struct" name="use-struct-toggle" style="margin-right: 10px;" />
+            <ui:Toggle value="true" text=" Use Array" name="use-array-toggle" style="margin-right: 10px;" />
+            <ui:Toggle value="true" text=" Strict Mode" name="strict-mode-toggle" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:ScrollView class="scroll-view--flex-grow" style="margin-left: 20px; margin-right: 20px; flex-grow: 1;">
+        <ui:TextField name="json-input-field" multiline="true" style="min-height: 360px;" />
+    </ui:ScrollView>
+    <ui:VisualElement style="margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px; flex-direction: row; min-height: 38px;">
+        <ui:Button text="Create Data Model" name="create-model-button" style="flex-grow: 1; height: 35px;" />
+        <ui:Button text="Load Cache" name="load-cache-button" style="flex-grow: 1; height: 35px;" />
+    </ui:VisualElement>
+</ui:UXML>

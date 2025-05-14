@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement style="margin-left: 20px; margin-right: 20px; margin-top: 15px; margin-bottom: 0; flex-direction: row; align-items: center;">
+        <ui:Label text="Model NameSpace" display-tooltip-when-elided="true" style="margin-right: 5px;" />
+        <ui:TextField picking-mode="Ignore" name="namespace-field" style="width: 250px;" />
+    </ui:VisualElement>
+    <ui:VisualElement style="margin-left: 20px; margin-right: 20px; margin-top: 15px; margin-bottom: 0; flex-direction: row; align-items: center;">
+        <ui:Label text="Save Path" display-tooltip-when-elided="true" style="margin-right: 5px;" />
+        <ui:TextField picking-mode="Ignore" name="path-field" style="width: 240px;" />
+        <ui:Button text="Browse" display-tooltip-when-elided="true" name="browse-button" />
+    </ui:VisualElement>
+    <ui:Button text="Save" display-tooltip-when-elided="true" name="save-button" style="margin-left: 20%; margin-right: 20%; margin-top: 25px; margin-bottom: 15px; padding-left: 6px; padding-right: 6px; padding-top: 6px; padding-bottom: 6px;" />
+</ui:UXML>
